@@ -1,9 +1,8 @@
 # Getting gdb56300 to work:
 
-First assemble your program with the -g flag to include debug information.
-```
-asm56300 -A -g -l MYPROG.lst -B MYPROG.asm
-```
+https://www.nxp.com/products/processors-and-microcontrollers/additional-mpu-mcus-architectures/digital-signal-processors/symphony-studio-development-tools:SYMPH_STUDIO
+
+gdb56300 is located in c:\Symphony-Studio\dsp56720-devtools\dist\gdb\
 
 gdb56300 crashes with wine, but it runs okay if you run it with the winedebugger ```winedbg```
 
@@ -15,18 +14,24 @@ justin@Z390:/usr/local/sbin$ cat gdb56300
 echo "continue" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe"
 ```
 
+First assemble your program with the -g flag to include debug information.
+
+```
+asm56300 -A -g -l MYPROG.lst -B MYPROG.asm
+```
+
 You can load symbols from the assembled ".cld" program
 Use the full path
 ```
-(gdb) file /home/justin/dev/asm/CS4218/ECHO.cld
-Reading symbols from z:\home\justin\dev\asm\cs4218\ECHO.cld...done.
+(gdb) file /home/justin/dev/asm/CS4218/MYPROG.cld
+Reading symbols from z:\home\justin\dev\asm\cs4218\MYPROG.cld...done.
 ```
 
 ```
 (gdb) info sources
 Source files for which symbols have been read in:
 
-ada_init.asm, ECHO.asm, vectors.asm
+ada_init.asm, MYPROG.asm, vectors.asm
 
 Source files for which symbols will be read in on demand:
 
@@ -46,6 +51,7 @@ Get gdb to connect to openocd like so:
 (gdb) target extended-remote localhost:3333
 Remote debugging using localhost:3333
 ```
+(Note: if you run file after connecting to openocd, the connection will be terminated, so use the order presented here)
 
 monitor command can be used to send ocd commands
 
