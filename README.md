@@ -94,7 +94,9 @@ Some debugging examples:
 ```
 (gdb) break 56303_test.asm:40
 (gdb) info break
-Breakpoint 1 at 0x101
+Num Type           Disp Enb Address    What
+1   breakpoint     keep y   0x00000101
+(gdb)
 (gdb) jump begin
 Continuing at 0x101
 (gdb) del break
