@@ -1,6 +1,9 @@
 # Getting gdb56300 to work:
 
 First assemble your program with the -g flag to include debug information.
+```
+asm56300 -A -g -l MYPROG.lst -B MYPROG.asm
+```
 
 gdb56300 crashes with wine, but it runs okay if you run it with the winedebugger ```winedbg```
 
