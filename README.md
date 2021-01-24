@@ -1,4 +1,4 @@
-Getting gdb56300 to work:
+# Getting gdb56300 to work:
 
 First assemble your program with the -g flag to include debug information.
 
