@@ -43,6 +43,7 @@ Non-debugging symbols:
 (gdb)
 ````
 Edit: It appears asm56300 is not detecting symbols correctly, or at least not all of them. The ECHO.asm example it fails to acknowledge MAIN, begin etc...
+See [1]
 
 Get gdb to connect to openocd like so:
 
@@ -120,6 +121,26 @@ $2 = 279
 $3 = 4421604
 ```
 
+[1] Symbols
+
+gdb56300 appears to be ignoring certain symbols.
+We can use the included cldlod program to dump a 'LOD' format of the assembled cld file
+
+The resulting output shows that the complete symbol table is intact.
+
+ie: 
+
+_SYMBOL P
+vectors              I 000000
+START                I 000100
+main                 I 000100
+sine_init            I 00010A
+sine_loop_end        I 00012C
+echo_loop            I 000132
+ada_init             I 00013C
+set_control          I 000153
+
+
 # References:
 
 Symphony-Studio windows installer.
@@ -127,3 +148,6 @@ https://www.nxp.com/products/processors-and-microcontrollers/additional-mpu-mcus
 
 User Manual:
 https://www.nxp.com/docs/en/user-guide/DSPSTUDIOUG.pdf
+
+dsp56k gcc + associated tools asm56300 cld*.exe etc
+https://www-mipp.fnal.gov/TPC/DAQ/56KCCUM.pdf
