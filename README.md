@@ -3,7 +3,7 @@
 
 gdb56300 is located in c:\Symphony-Studio\dsp56720-devtools\dist\gdb\
 
-gdb56300 crashes with wine, but it runs okay if you run it with the winedebugger ```winedbg```
+gdb56300 crashes/hangs with wine, but it runs okay if you run it with the winedebugger ```winedbg```
 
 Simple wrapper can be used to get it to run.
 
