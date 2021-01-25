@@ -78,7 +78,7 @@ find location in code...
 #0 0x00000107 in endloop() at 56303_test.asm:43
 ```
 
-A useful gdb command that has been created specifically for Symphony DSPs is a modify memory
+A useful gdb command that has been created specifically for Symphony DSPs to modify memory
 ```
 command M:
 M <memspace>:<start_addr>[..<end_addr>] <data>
