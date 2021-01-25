@@ -123,6 +123,37 @@ $2 = 279
 $3 = 4421604
 ```
 
+### [2] Advanced gbd init
+
+gbd can run commands on startup using the -x flag.
+
+We can generate a command file on the fly
+
+Usage:
+
+gdb56300 MYPROG.cld
+
+
+/usr/local/sbin/gdb5600
+```
+#!/bin/bash
+
+FILE=/tmp/gbdinit
+PORT=4444
+if [ ${@} ]; then
+  echo "file $1" > $FILE
+  echo "target extended-remote localhost:$PORT" >> $FILE
+  echo "monitor halt" >> $FILE
+  echo "monitor init" >> $FILE
+  echo "load" >> $FILE
+  echo "continue" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe" "-x $FILE"
+else
+  echo "" > $FILE
+  echo "continue" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe"
+fi;
+```
+
+
 ### [1] Symbols
 
 We can use the included cldlod.exe program to dump a 'LOD' format of the assembled cld file
@@ -141,6 +172,7 @@ echo_loop            I 000132
 ada_init             I 00013C
 set_control          I 000153
 ```
+
 
 # References:
 
