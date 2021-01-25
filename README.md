@@ -68,8 +68,20 @@ Loading section .text, size 0x5a0 lma 0x20000100
 Loading section .data, size 0x18 lma 0x200006a0
 Start address 0x2000061c, load size 1720
 Transfer rate: 22 KB/sec, 573 bytes/write.
+```
+
+continue command is used to continue program execution.
+```
 (gdb) continue
 Continuing....
+```
+
+use ctrl + c to interrupt program execution and to resume gdb interaction.
+
+```
+Program received signal SIGINT, Interrupt.
+0x00ff0025 in ?? ()
+(gdb)
 ```
 
 find location in code...
