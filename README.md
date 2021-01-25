@@ -110,7 +110,7 @@ $3 = 4421604
 
 # References:
 
-Symphoy-Studio windows installer.
+Symphony-Studio windows installer.
 https://www.nxp.com/products/processors-and-microcontrollers/additional-mpu-mcus-architectures/digital-signal-processors/symphony-studio-development-tools:SYMPH_STUDIO
 
 User Manual:
