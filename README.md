@@ -127,7 +127,7 @@ $3 = 4421604
 
 gbd can run commands on startup using the -x flag.
 
-We can generate a command file on the fly
+We can generate a command file on the fly to load the .cld file, connect to openocd and load the program on the target.
 
 Usage:
 
