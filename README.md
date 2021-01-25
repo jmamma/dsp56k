@@ -124,7 +124,7 @@ $3 = 4421604
 ### [1] Symbols
 
 gdb56300 appears to be ignoring certain symbols.
-We can use the included cldlod program to dump a 'LOD' format of the assembled cld file
+We can use the included cldlod.exe program to dump a 'LOD' format of the assembled cld file
 
 The resulting output shows that the complete symbol table is intact.
 
