@@ -42,8 +42,10 @@ Non-debugging symbols:
 0x00000188  echo
 (gdb)
 ````
-Edit: It appears asm56300 is not detecting symbols correctly, or at least not all of them. The ECHO.asm example it fails to acknowledge MAIN, begin etc...
+Edit: It appears asm56300 is not displaying* symbols correctly, or at least not all of them. The ECHO.asm example it fails to acknowledge MAIN, begin etc...
 See [1]
+
+Edit 2: This is a bug or misunderstanding on my part. If you type ```(gdb) info symbol``` and then hit TAB for command completion, the symbols are shown....
 
 Get gdb to connect to openocd like so:
 
@@ -123,7 +125,6 @@ $3 = 4421604
 
 ### [1] Symbols
 
-gdb56300 appears to be ignoring many symbols.
 We can use the included cldlod.exe program to dump a 'LOD' format of the assembled cld file
 
 The resulting output shows that the complete symbol table is intact.
