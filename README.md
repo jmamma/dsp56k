@@ -10,7 +10,7 @@ Simple wrapper can be used to get it to run.
 ```
 justin@Z390:/usr/local/sbin$ cat gdb56300
 #!/bin/bash
-echo "continue" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe"
+echo "cont" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe"
 ```
 
 First assemble your program with the -g flag to include debug information.
@@ -146,9 +146,9 @@ if [ ${@} ]; then
   echo "monitor halt" >> $FILE
   echo "monitor init" >> $FILE
   echo "load" >> $FILE
-  echo "continue" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe" "-x $FILE"
+  echo "cont" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe" "-x $FILE"
 else
-  echo "continue" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe"
+  echo "cont" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe"
 fi;
 ```
 
