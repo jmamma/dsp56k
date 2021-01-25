@@ -20,7 +20,7 @@ asm56300 -A -g -l MYPROG.lst -B MYPROG.asm
 ```
 
 You can load symbols from the assembled ".cld" program
-Use the full path
+(Use the full path)
 ```
 (gdb) file /home/justin/dev/asm/CS4218/MYPROG.cld
 Reading symbols from z:\home\justin\dev\asm\cs4218\MYPROG.cld...done.
