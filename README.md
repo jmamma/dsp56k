@@ -148,7 +148,6 @@ if [ ${@} ]; then
   echo "load" >> $FILE
   echo "continue" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe" "-x $FILE"
 else
-  echo "" > $FILE
   echo "continue" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.exe"
 fi;
 ```
