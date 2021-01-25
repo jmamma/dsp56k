@@ -105,14 +105,20 @@ M <memspace>:<start_addr>[..<end_addr>] <data>
 
 Some debugging examples:
 
+Use 
+```(gdb) jump * var```
+as opposed to 
+```(gdb) jump var``` 
+for correct variable -> address mapping.
+
 ```
 (gdb) break 56303_test.asm:40
 (gdb) info break
 Num Type           Disp Enb Address    What
 1   breakpoint     keep y   0x00000101
 (gdb)
-(gdb) jump begin
-Continuing at 0x101
+(gdb) jump * begin
+Continuing at 0x100
 (gdb) del break
 
 (gdb) print $pc
