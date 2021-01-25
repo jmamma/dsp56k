@@ -1,6 +1,5 @@
 # Getting gdb56300 to work:
 
-https://www.nxp.com/products/processors-and-microcontrollers/additional-mpu-mcus-architectures/digital-signal-processors/symphony-studio-development-tools:SYMPH_STUDIO
 
 gdb56300 is located in c:\Symphony-Studio\dsp56720-devtools\dist\gdb\
 
@@ -108,3 +107,11 @@ $2 = 279
 (gdb) print $a0
 $3 = 4421604
 ```
+
+# References:
+
+Symphoy-Studio windows installer.
+https://www.nxp.com/products/processors-and-microcontrollers/additional-mpu-mcus-architectures/digital-signal-processors/symphony-studio-development-tools:SYMPH_STUDIO
+
+User Manual:
+https://www.nxp.com/docs/en/user-guide/DSPSTUDIOUG.pdf
