@@ -16,7 +16,7 @@ echo "cont" | winedbg "c:\Symphony-Studio\dsp56720-devtools\dist\gdb\gdb56300.ex
 First assemble your program with the -g flag to include debug information.
 
 ```
-asm56300 -A -g -l MYPROG.lst -B MYPROG.asm
+asm56300 -A -G -l MYPROG.lst -B MYPROG.asm
 ```
 
 You can load symbols from the assembled ".cld" program
