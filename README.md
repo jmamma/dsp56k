@@ -121,7 +121,7 @@ $2 = 279
 $3 = 4421604
 ```
 
-[1] Symbols
+### [1] Symbols
 
 gdb56300 appears to be ignoring certain symbols.
 We can use the included cldlod program to dump a 'LOD' format of the assembled cld file
@@ -129,7 +129,7 @@ We can use the included cldlod program to dump a 'LOD' format of the assembled c
 The resulting output shows that the complete symbol table is intact.
 
 ie: 
-
+```
 _SYMBOL P
 vectors              I 000000
 START                I 000100
@@ -139,7 +139,7 @@ sine_loop_end        I 00012C
 echo_loop            I 000132
 ada_init             I 00013C
 set_control          I 000153
-
+```
 
 # References:
 
