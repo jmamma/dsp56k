@@ -42,7 +42,7 @@ Non-debugging symbols:
 0x00000188  echo
 (gdb)
 ````
-
+Edit: It appears asm56300 is not detecting symbols correctly, or at least not all of them. The ECHO.asm example it fails to acknowledge MAIN, begin etc...
 
 Get gdb to connect to openocd like so:
 
