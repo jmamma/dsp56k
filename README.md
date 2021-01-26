@@ -42,10 +42,7 @@ Non-debugging symbols:
 0x00000188  echo
 (gdb)
 ````
-Edit: It appears asm56300 is not displaying* symbols correctly, or at least not all of them. The ECHO.asm example it fails to acknowledge MAIN, begin etc...
-See [1]
-
-Edit 2: This is a bug or misunderstanding on my part. If you type ```(gdb) info symbol``` and then hit TAB for command completion, the symbols are shown....
+Edit: It appears asm56300 is not displaying* asm symbols correctly. This is a bug or misunderstanding on my part. If you type ```(gdb) info symbol``` and then hit TAB for command completion, all the accessible symbols are shown....
 
 Get gdb to connect to openocd like so:
 
