@@ -180,6 +180,8 @@ set_control          I 000153
 
 ### [3] Gdb is confused about which file it is reading.
 
+Sympton: Gdb would think each line was in ada_init.asm ignoring the main assembly file.
+
 One of the include files "ada_init.asm" 
 
 org p
