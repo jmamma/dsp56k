@@ -178,6 +178,16 @@ ada_init             I 00013C
 set_control          I 000153
 ```
 
+### [3] Gdb is confused about which file it is reading.
+
+One of the include files "ada_init.asm" 
+
+org p
+
+should be replaced with
+
+org p:$XXXX where XXXX is a memory region of your choice.
+
 
 # References:
 
