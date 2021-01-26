@@ -126,6 +126,10 @@ $2 = 279
 $3 = 4421604
 ```
 
+Resync gdb with openocd:
+(Apparently this should work)
+```monitor gdb_sync```
+
 ### [2] Advanced gbd init
 
 gbd can run commands on startup using the -x flag.
