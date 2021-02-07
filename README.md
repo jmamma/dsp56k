@@ -200,5 +200,9 @@ https://www.nxp.com/products/processors-and-microcontrollers/additional-mpu-mcus
 User Manual:
 https://www.nxp.com/docs/en/user-guide/DSPSTUDIOUG.pdf
 
+G563 (56300 FreeScale C Compiler manual):
+http://application-notes.digchip.com/314/314-68461.pdf
+
+G56K (56001/2 Motorola C Compiler manual:
 dsp56k gcc + associated tools asm56300 cld*.exe etc
 https://www-mipp.fnal.gov/TPC/DAQ/56KCCUM.pdf
